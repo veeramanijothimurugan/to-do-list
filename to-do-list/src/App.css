@@ -77,8 +77,7 @@ img {
 }
 
 .add{
-  padding: 20px 30px 20px 50px;
-  background-image: url(./add.png);
+  padding: 20px 30px 20px 30px;
   background-position: 30px;
   background-repeat: no-repeat;
   background-color: #AF7EEB;
@@ -193,4 +192,8 @@ button:hover{
   text-decoration: none;
   color: #7100fa;
   cursor: pointer;
+}
+
+.icon{
+  padding-right: 10px;
 }

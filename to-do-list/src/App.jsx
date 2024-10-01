@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClose, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faAdd, faClose, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [addBtn, setAddBtn] = useState(true);
@@ -68,6 +68,7 @@ function App() {
                 setShow(true);
               }}
             >
+              <FontAwesomeIcon className="icon" icon={faAdd}/>
               New Task
             </button>
           )}
