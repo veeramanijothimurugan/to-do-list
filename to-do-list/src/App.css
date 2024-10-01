@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: Lexend;
+}
+
+body{
+  background-color: #E3E9FF;
+  color: #96A0BF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1{
+  background-color: #AF7EEB;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+img{
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.task{
+  margin-bottom: 20px;
+}
+
+.option{
+  float: right;
+}
+
+span{
+  font-size: 15px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0px 0px;
+}
+
+.option {
+  display: flex;
+  gap: 20px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.list-box{
+  background: white;
+  padding: 10px 10px 0px 20px;
+  padding-bottom: 50px;
+}
+
+.edit:hover{
+  color: #000;
+}
+
+.dlt{
+  transition: .5s;
+}
+
+.dlt:hover{
+  color: tomato;
+}
+
+.add{
+  padding: 20px 30px 20px 50px;
+  background-image: url(./add.png);
+  background-position: 30px;
+  background-repeat: no-repeat;
+  background-color: #AF7EEB;
+  background-size: 12px;
+  color: #fff;
+  border: none;
+  margin-top: -30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transform: 0.5s;
+}
+
+.addList{
+  background-color: #AF7EEB;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+}
+
+button:hover{
+  background-color: #bea4dd;
+}
+
+.input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 15px; 
+}
+
+.close{
+  float: right;
+  margin: 10px;
+  border: none;
+  background: none;
+}
+
+.close:hover{
+  background: none;
+}
+
+
+.feed {
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.addbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-blur {
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+
+.checkbox + .task::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #AF7EEB;
+  border-radius: 0px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+
+.checkbox:checked + .task::before {
+  background-color: #AF7EEB;
+  content: "\2714";
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  line-height: 16px;
+}
+
+.checked{
+  text-decoration: 1.5px line-through;
+}
+
+.author{
+  text-align: center;
+  font-size: 13px;
+  color: #000;
+}
+
+.author > a{
+  text-decoration: none;
+  color: #7100fa;
+  cursor: pointer;
+}
